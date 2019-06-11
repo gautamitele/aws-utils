@@ -16,3 +16,4 @@ echo "x_security_token_expires = $(cat tmp-session.json | jq -r .Credentials.Exp
 rm tmp-session.json
 echo "Assumed creds placed in"
 cat ~/.aws/credentials
+aws sts get-caller-identity
